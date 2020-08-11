@@ -1,0 +1,502 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./CSS/header.css">
+        <link rel="stylesheet" href="./CSS/footer.css">
+        <link rel="stylesheet" href="./CSS/slideshow.css">
+        <link rel="stylesheet" href="./CSS/dark-mode-theme.css">
+        <link rel="stylesheet" href="./fontawesome/css/all.css">
+        <link rel="stylesheet" href="./CSS/back-to-top.css">
+        <link rel="icon" type="image/png" href="./Logo/favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="./Logo/favicon-16x16.png" sizes="16x16" />
+        
+        <link rel="stylesheet" href="./CSS/main1.css">
+        <link rel="stylesheet" href="./CSS/main2.css">
+        <link rel="stylesheet" href="./CSS/main3.css">
+        <link rel="stylesheet" href="./CSS/main4.css">
+        <link rel="stylesheet" href="./CSS/main5.css">
+        <title>Hoàng Nam yêu Thu Loan</title>
+        <style>
+          
+            .dark-mode{width:66px;}
+            .toggle,.mode{position:relative;float:right;outline:0;border:0;padding:0;overflow:hidden;cursor:pointer}
+            .toggle{margin-left:10px;border-radius:10px;width:33px;height:20px}
+            .toggle,.mode::before,.dark .mode::after{background:rgb(87, 50, 50)}
+            .dark .toggle{background:#444}
+            .auto .toggle{background:#6d6!important}
+            .toggle::before,.mode::before,.mode::after{position:absolute;content:''}
+            .toggle::before{top:1px;left:1px;transition:.4s;background:#fff;width:18px;height:18px}
+            .auto .toggle::before{left:14px}
+            .toggle::before,.mode,.mode::before,.mode::after{border-radius:50%}
+            .dark .mode{top:2px;left:-2px;overflow:visible}
+            .dark .mode,.dark .mode::before{border-radius:0}
+            .mode,.dark .mode::before,.mode::after{background:rgb(255, 251, 0)}
+            .mode{width:20px;height:20px}
+            .dark .mode,.mode::before,.mode::after{width:16px;height:16px}
+            .mode::before{top:2px;left:2px}
+            .dark .mode::before{top:0;left:0;transform:rotate(45deg)}
+            .mode::after{top:-3px;left:7px}
+            .dark .mode::after{top:1px;left:1px;width:14px;height:14px}
+            </style>
+            <script>
+            
+            function auto(){document.body.classList.add('auto');if(new Date().getHours()>21||new Date().getHours()<7){document.body.classList.add('dark');localStorage.setItem('311326dark','true')}else{document.body.classList.remove('dark');localStorage.setItem('311326dark','false')}}function dark(){localStorage.getItem('311326dark')=='true'?document.body.classList.add('dark'):document.body.classList.remove('dark')}if(localStorage.getItem('311326auto')=='true'){auto()}else{localStorage.getItem('311326dark')==null?auto():dark()}function toggle(){localStorage.setItem('311326auto',localStorage.getItem('311326auto')=='true'?'false':'true');localStorage.getItem('311326auto')=='true'?auto():document.body.classList.remove('auto')}function mode(){document.body.classList.remove('auto');localStorage.removeItem('311326auto');localStorage.setItem('311326dark',localStorage.getItem('311326dark')=='true'?'false':'true');dark()}
+            
+            </script>
+    </head>
+    <body>
+        
+        <header class="container-fluid" id="top">
+            <div class="row header">
+                <div class="col-lg-3 col-md-3 col-sm-3">
+                    <div id="time"></div>
+                </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 timeget">
+                        <a href="https://time.is/Hanoi" id="time_is_link" target="_blank" ></a>
+                        <span id="Hanoi_z418"></span> 
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                       <div class="icon-connect">
+                        <a id="facebook" href="https://www.facebook.com/nam1822001/" target="_blank" data-toggle="tooltip" data-placement="bottom" title="FaceBook"><i class="fab fa-facebook"></i></a>&emsp;
+                        <a href="https://www.facebook.com/messages/t/nam1822001"  target="_blank"><i class="fab fa-facebook-messenger"></i></a>&emsp;
+                        <a href="https://www.youtube.com/channel/UCFovmhE6wmj-6doJKKURaiA/featured" target="_blank"><i class="fab fa-youtube"></i></a>&emsp;
+                        <a href="mailto:namkenly2001@gmail.com"  target="_blank"><i class="fas fa-envelope"></i></a>&emsp;
+                        <a href="https://www.instagram.com/justbenam/?hl=vi" target="_blank"><i class="fab fa-instagram-square"></i></a>
+                       </div>
+                    </div>
+            </div>
+        </header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-custom sticky-top">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>   
+                <a class="navbar-brand mx-auto" href="#"><img src="./Logo/logoofme.png" width="50px" height="50px"></a>
+                <div class='dark-mode'>
+                    <!-- <button class='toggle' onclick='toggle()' type='button'/> -->
+                    <button class='mode' onclick='mode();' type='button'/>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                        <a class="nav-link" href="#">Trang Chủ<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="dayslove.html" target="_blank">Days Love<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Trang Chủ<span class="sr-only">(current)</span></a>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </nav>
+                <div class="slideshow1 ">
+                    <div class="wrapper">
+                        <div class="slideshows">
+                          <div class="slideshow slideshow--hero">
+                            <div class="slides">
+                              <div class="slide slide1"></div>
+                              <div class="slide slide2"></div>
+                              <div class="slide slide3"></div>
+                            </div>
+                          </div>
+                          <div class="slideshow slideshow--contrast slideshow--contrast--before">
+                            <div class="slides">
+                              <div class="slide slide1"></div>
+                              <div class="slide slide2"></div>
+                              <div class="slide slide3"></div>
+                            </div>
+                          </div>
+                          <div class="slideshow slideshow--contrast slideshow--contrast--after">
+                            <div class="slides">
+                              <div class="slide slide1"></div>
+                              <div class="slide slide2"></div>
+                              <div class="slide slide3"></div>
+                            </div>
+                          </div>
+                        </div>
+                          </div>
+                </div>
+        <main class="body">
+            <div class="">   
+                <div class="content-block__effect">
+                  <h2 class="my-5">Góc bảo mật</h2>
+                  
+                  <div class="portfolio-effect"> 
+                    
+                   
+                    <div class="portfolio-item portfolio-effect__item portfolio-item--eff1">
+                        
+                      <img class="portfolio-item__image" src="./Ảnh/Emmm/1574929038514.jpg" alt="Portfolio Item" width="826" height="551">
+            
+                      <div class="portfolio-item__info">
+            
+                        <h3 class="portfolio-item__header">Góc của vợ</h3>
+                        
+                        <div class="portfolio-item__links">
+                          
+                          <div class="portfolio-item__link-block">
+                            
+                            <a class="portfolio-item__link" href="Loan'spage.html" title="Link Title">
+                              <i class="fas fa-link"></i>
+                            
+                            </a>
+                            
+                          </div>
+                          
+                          <div class="portfolio-item__link-block">
+                            
+                            <a class="portfolio-item__link" href="#" title="Link Title">
+                              <i class="fas fa-heart "></i>
+                              
+                            </a>
+                            
+                          </div>
+                          
+                        </div>
+            
+                      </div>
+                        
+                    </div>
+                    
+                    
+                    <div class="portfolio-item portfolio-effect__item portfolio-item--eff1">
+                        
+                      <img class="portfolio-item__image" src="./Ảnh/Emmm/1576906117624.jpg" alt="Portfolio Item" width="826" height="551">
+            
+                      <div class="portfolio-item__info">
+            
+                        <h3 class="portfolio-item__header">Góc của anh iu</h3>
+                        
+                        <div class="portfolio-item__links">
+                          
+                          <div class="portfolio-item__link-block">
+                            
+                            <a class="portfolio-item__link" href="#" title="Link Title">
+                              <i class="fas fa-link"></i>
+                            
+                            </a>
+                            
+                          </div>
+                          
+                          <div class="portfolio-item__link-block">
+                            
+                            <a class="portfolio-item__link" href="#" title="Link Title">
+                              <i class="fas fa-heart"></i>
+                              
+                            </a>
+                            
+                          </div>
+                          
+                        </div>
+            
+                      </div>
+                        
+                    </div>
+                    
+                    <div class="portfolio-item portfolio-effect__item  portfolio-item--eff1">
+                        
+                      <img class="portfolio-item__image" src="./Ảnh/Emmm/1576952407992.jpg" alt="Portfolio Item" width="826" height="551">
+            
+                      <div class="portfolio-item__info">
+            
+                        <h3 class="portfolio-item__header">Góc của sau này</h3>
+                        
+                        <div class="portfolio-item__links">
+                          
+                          <div class="portfolio-item__link-block">
+                            
+                            <a class="portfolio-item__link" href="#" title="Link Title">
+                              <i class="fas fa-link"></i>
+                            
+                            </a>
+                            
+                          </div>
+                          
+                          <div class="portfolio-item__link-block">
+                            
+                            <a class="portfolio-item__link" href="#" title="Link Title">
+                              <i class="fas fa-heart"></i>
+                              
+                            </a>
+                            
+                          </div>
+                          
+                        </div>
+            
+                      </div>
+                        
+                    </div>
+                    <div class="portfolio-item portfolio-effect__item  portfolio-item--eff1">
+                        
+                        <img class="portfolio-item__image" src="./Ảnh/2020-05/FB_IMG_1589327317657.jpg" alt="Portfolio Item" width="826" height="551">
+              
+                        <div class="portfolio-item__info">
+              
+                          <h3 class="portfolio-item__header">Góc Mlem Mlem</h3>
+                          
+                          <div class="portfolio-item__links">
+                            
+                            <div class="portfolio-item__link-block">
+                              
+                              <a class="portfolio-item__link" href="#" title="Link Title">
+                                <i class="fas fa-link"></i>
+                              
+                              </a>
+                              
+                            </div>
+                            
+                            <div class="portfolio-item__link-block">
+                              
+                              <a class="portfolio-item__link" href="#" title="Link Title">
+                                <i class="fas fa-heart"></i>
+                                
+                              </a>
+                              
+                            </div>
+                            
+                          </div>
+              
+                        </div>
+                          
+                      </div>
+                      
+                  </div>
+                  
+                </div>
+                </div>
+                
+            <div class="">
+               <div class="text-second-title phong-chu">Hãy di chuột qua bức ảnh hoặc bấm từng cái ở trên ảnh</div>
+                <div class="w">
+                    <div class="i"></div>
+                    <div class="i"></div>
+                    <div class="i"></div>
+                    <div class="i"></div>
+                    <div class="i"></div>
+                    <div class="i"></div>
+                    <div class="i"></div>
+                    <div class="i"></div>
+                    <div class="i"></div>
+                    <div class="i"></div>
+                    <div class="i"></div>
+                    <div class="i"></div>
+                    <div class="i"></div>
+                    <div class="i"></div>
+                    <div class="i"></div>
+                    <div class="i"></div>
+                    <div class="i"></div>
+                    <div class="i"></div>
+                    <div class="i"></div>
+                    <div class="i"></div>
+                    <div class="i"></div>
+                    <div class="i"></div>
+                    <div class="i"></div>
+                    <div class="i"></div>
+                    <div class="i"></div>
+                    <div class="i"></div>
+                    <div class="i"></div>
+                    <div class="i"></div>
+                    <div class="i"></div>
+                    <div class="i"></div>
+                    <div class="i"></div>
+                    <div class="i"></div>
+                    <div class="i"></div>
+                    <div class="i"></div>
+                    <div class="i"></div>
+                    <div class="i"></div>
+                    <div class="i"></div>
+                    <div class="i"></div>
+                    <div class="i"></div>
+                    <div class="i"></div>
+                    <div class="i"></div>
+                    <div class="i"></div>
+                    <div class="i"></div>
+                    <div class="i"></div>
+                    <div class="i"></div>
+                    <div class="i"></div>
+                    <div class="i"></div>
+                    <div class="i"></div>
+                    <div class="i"></div>
+                    <div class="i"></div>
+                    <div class="h">
+                    <h1>Hun em</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="info tex-three-title three-img container-fluid mt-5">
+                    <h2 class="phong-chu">Di chuột tới bức ảnh, đây chính là chúng ta</h2>
+                    <span class="just frame  mt-5" href="#" style="--w:60vmin;--h:39vmin;">
+                        <div class="slice"></div>
+                        <div class="slice"></div>
+                        <div class="slice"></div>
+                        <div class="slice"></div>
+                        <div class="slice"></div>
+                        <div class="slice"></div>
+                        <div class="slice"></div>
+                        <div class="slice"></div>
+                        <div class="slice"></div>
+                        <div class="slice"></div>
+                        <div class="slice"></div>
+                        <div class="slice"></div>
+                        <div class="slice"></div>
+                        <div class="slice"></div>
+                        <div class="slice"></div>
+                        <div class="slice"></div>
+                        <div class="slice"></div>
+                        <div class="slice"></div>
+                        <div class="slice"></div>
+                        <div class="slice"></div>
+                        <div class="slice"></div>
+                        <div class="slice"></div>
+                        <div class="slice"></div>
+                        <div class="slice"></div>
+                        <div class="slice"></div>
+                        <div class="slice"></div>
+                        <div class="slice"></div>
+                        <div class="slice"></div>
+                        <div class="slice"></div>
+                        <div class="slice"></div>
+                        <div class="slice"></div>
+                        <div class="slice"></div>
+                        <div class="slice"></div>
+                        <div class="slice"></div>
+                        <div class="slice"></div>
+                        <div class="slice"></div>
+                        <div class="slice"></div>
+                        <div class="slice"></div>
+                        <div class="slice"></div>
+                        <div class="slice"></div>
+                        <div class="slice"></div>
+                        <div class="slice"></div>
+                        <div class="slice"></div>
+                        <div class="slice"></div>
+                        <div class="slice"></div>
+                        <div class="slice"></div>
+                        <div class="slice"></div>
+                        <div class="slice"></div>
+                        <div class="slice"></div>
+                        <div class="slice"></div>
+                        <div class="slice"></div>
+                        <div class="slice"></div>
+                        <div class="slice"></div>
+                        <div class="slice"></div>
+                        <div class="slice"></div>
+                        <div class="slice"></div>
+                        <div class="slice"></div>
+                        <div class="slice"></div>
+                        <div class="slice"></div>
+                        <div class="slice"></div>
+                        <div class="slice"></div>
+                        <div class="slice"></div>
+                        <div class="slice"></div>
+                        <div class="slice"></div>
+                  </span>  
+            </div>           
+            <div class="mt-5">
+                <div id="container">
+                    <span>
+                      <img src="./Video/anhyeuem.gif" alt="Anh yêu em"> 
+                    </span>
+                    <div class="box-text">
+                    <h1>Cảm ơn em</h1>
+                    <p>Vì đã tới bên cuộc đời của anh, cho anh biết thế nào là vị ngọt, thế nào là dư vị của tình yêu.</p>
+                    <p>Anh muốn hét cho cả thế giới biết rằng: </p>
+                    <p>Ở phía dưới ý</p>
+                    </div>
+                </div>
+            </div>
+            <div class="main5">
+              <h2 class="phong-chu">Ở đây nè bấm vào đi</h2>
+              <div class="containera">
+                <div
+                     class="container__image">
+
+                  <div class="container__info container__author">Anh yêu em</div>
+                  <div class="container__info container__location">Công chúa nhỏ của anh</div>
+              
+                </div>
+              </div>
+            </div>
+        </main>
+        <footer class="site-footer">
+          <div class="container">
+            <div class="row f-logo"><img src="./Logo/logoofme - Copy.png" alt=""></div>
+            <div class="row">
+              <div class="col-sm-12 col-md-6">
+                <h6>About</h6>
+                <p class="text-justify">Page này tạo ra là để nói <b>yêu bé Loan rất nhiều</b>.</p>
+                <p>Được thiết  kế bởi <b>Hoàng Nam</b> dành cho <b>Thu Loan</b></p>
+              </div>
+
+              <div class="col-xs-6 col-md-3">
+                <h6>Quick Links</h6>
+                <ul class="footer-links">
+                  <li><a href="index.html">Trang chủ</a></li>
+                  <li><a href="dayslove.html">Số ngày yêu nhau</a></li>
+                  <li><a href="#">Contribute</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">Sitemap</a></li>
+                </ul>
+              </div>
+
+              <div class="col-xs-6 col-md-3">
+                <h6>FALL IN LOVE</h6>
+                  <img src="./Ảnh/bennhao/IMG_20191231_212341.jpg" width="50%" alt="">
+              </div>
+            </div>
+            <hr>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 col-sm-6 col-xs-12">
+                <p class="copyright-text">&copy; 2017 Bản quyền thuộc sở hữu trí tuệ của <b>Hoàng Nam</b> | Thiết két bởi <b>Hoàng Nam</b>.
+                </p>
+              </div>
+
+              <div class="col-md-4 col-sm-6 col-xs-12">
+                <ul class="social-icons">
+                  <li><a class="facebook" href="https://www.facebook.com/nam1822001/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                  <li><a class="twitter"  href="https://www.facebook.com/messages/t/nam1822001"  target="_blank"><i class="fab fa-facebook-messenger"></i></a></li>
+                  <li><a class="dribbble" href="https://www.instagram.com/justbenam/?hl=vi" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                  <li><a class="linkedin" href="mailto:namkenly2001@gmail.com"  target="_blank"><i class="far fa-envelope"></i></a></li>   
+                </ul>
+              </div>
+            </div>
+          </div>
+        </footer>
+            </div>
+        </footer>
+        <div class="back-to-top-div">
+          <a href="#top" id="myBtn" onclick="scrollFunction();" title="Go to top"></a>
+        </div> 
+        <script src="//widget.time.is/t.js"></script>
+        <script>
+            time_is_widget.init({Hanoi_z418:{}});
+        </script>
+        <script src="./JS/back-to-top.js"></script>      
+        <script src="./JS/main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script> -->
+        <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> -->
+        <!-- <script src="./bootstrap/js/bootstrap.bundle.js"></script> -->
+        <script src="./bootstrap/js/bootstrap.min.js"></script>
+        <!-- Go to www.addthis.com/dashboard to customize your tools -->
+        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5f2c13227dcf8cd6"></script>
+    </body>
+    </html>
