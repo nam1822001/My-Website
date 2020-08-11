@@ -1,0 +1,25 @@
+.header{
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+#time{
+    letter-spacing: 1px;
+    
+    font-family:'digital-clock-font';
+}
+#Hanoi_z418{
+    font-family: 'digital-clock-font';
+}
+.icon-connect a{
+    color: white;
+}
+.bg-custom{
+    
+        background-image: linear-gradient(top, transparent);
+        background-image: repeating-linear-gradient(-1deg, rgb(180, 118, 224), rgb(20, 167, 220));
+        
+}
+.active{
+    border-bottom: solid black 1px;
+}

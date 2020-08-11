@@ -1,0 +1,14 @@
+.text-font{
+    font-family: "Pacifico";
+    font-weight: bold;
+}
+.text-title{
+    font-family: "times";
+    font-size: 14px;
+}
+.title-gallary{
+    font-family: "Pacifico";
+    justify-content: center;  
+    font-size: 30px;
+
+}

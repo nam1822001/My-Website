@@ -1,0 +1,43 @@
+#myBtn {
+    color: #fff;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center; 
+    width: 60px;
+    height: 60px;
+    line-height: 2.5em;
+    border-radius: 50%;
+    margin: 0 auto;
+    opacity: 0.5;
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    z-index: 99;
+    background-color: rgb(0, 0, 0);
+    background:url(../Ảnh/Khác/back-to-top.gif) rgb(217, 0, 255);
+    background-size: cover;
+   
+  }
+  #myBtn:hover {
+    opacity: 1;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  @media only screen and (max-width:992px){
+    #myBtn{
+      width: 55px;
+      height: 55px;
+    }
+}
+  @media only screen and (max-width:768px){
+    #myBtn{
+      width: 50px;
+      height: 50px;
+    }
+}
+  @media only screen and (max-width:576px){
+      #myBtn{
+        width: 40px;
+        height: 40px;
+      }
+  }

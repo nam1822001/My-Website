@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Bad+Script|Bellefair|Comfortaa|Satisfy|Slabo+27px|Vidaloka');
+
+
+#container {
+    text-align: center;
+	width: 100%;
+	max-width: 700px;
+
+	height: 100%;
+	margin: 6em auto;
+	overflow: hidden;
+	border: 10px solid #EEE5E5;
+	outline: 5px dashed #EEE5E5;
+    cursor: pointer;
+	position: relative;
+	
+}
+#container img {
+	width: 100%;
+	height: 100%;
+	margin-bottom: -5px;
+	transition: all 0.3s ease-out;
+	position: relative;
+	z-index: 2;
+}
+#container:hover img {
+	transform: scale(1.2, 1.2);
+	z-index: 9;
+}
+.box-text {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 3;
+	padding: 10px;
+    background-image: linear-gradient( 135deg, rgba(32, 233, 206, 0.5) 10%, rgba(211, 15, 126, 0.65) 100%);
+	opacity: 1;
+	transition: 0.3s linear;
+	color: #FFF;
+	font-family: 'Bellefair', serif;
+    font-family: 'Satisfy', cursive;
+	text-shadow: 2px 2px 2px #333;
+}
+.box-text h1 {
+	font-size: 2.2em;
+	font-family: 'Bellefair', serif;
+    font-family: 'Comfortaa', cursive;
+}
+.box-text p {font-size: 1.5em;}
+.box-text:hover{opacity: 0;}

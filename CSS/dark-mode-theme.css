@@ -1,0 +1,15 @@
+
+.body{
+      background-color:hsl(144, 100%, 89%);
+      color:#000;
+    
+      }
+.dark .body{
+      background-color:hsl(198, 43%, 11%);
+      color:#eee;
+      }
+/* @media only screen and (max-width:576px){
+  .navbar-nav{
+    
+  }
+} */
